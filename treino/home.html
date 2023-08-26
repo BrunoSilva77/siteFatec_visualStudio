@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/carrousel.css">
+    <link rel="stylesheet" href="js/menu.js">
+    <link rel="stylesheet" href="style/menu.css">
+    <script>"https://code.jquery.com/jquery-3.6.0.min.js"</script>
+    <title>Treino site basico</title>
+
+</head>
+<body>
+
+    <div class="box_menu">
+
+        <div class="banner">
+
+            <img src="img/banner_fatec3.png" alt="banner">
+
+            <nav class="nav">
+                <ul class="menu">
+                    <li><a href="#">Página Inicial</a>
+
+                    <li><a href="#">Instituição ▾</a>
+
+                        <ul>
+                            <li style="margin-top: 10px;"><a href="#">Quem Somos</a></li>
+                            <li><a href="#">Biblioteca</a></li>
+                            <li><a href="#">Monitoria</a></li>
+                            <li><a href="#">Iniciação Cientifica</a></li>
+                            <li><a href="#">Processo Seletivo Simplificado</a></li>
+                            <li><a href="#">Vagas Remanescentes</a></li>
+                            <li style="margin-bottom: 20px;"><a href="#">Plano de Desenvolvimento Intitucional - PDI</a></li>
+                            <li style="margin-bottom: 10px;"><a href="#">Relatorio Anual de Atividades - 2023</a></li>
+                        </ul>
+
+                    </li>
+
+                    <li><a href="#">Vestibular</a>
+
+                    <li><a href="#">Cursos ▾</a>
+
+                        <ul>
+                            <li style="margin-top: 10px;"><a href="#">ADS</a></li>
+                            <li><a href="#">Biocombustiveis</a></li>
+                            <li style="margin-bottom: 10px;"><a href="#">Gestão Empresarial</a></li>
+                        </ul>
+
+                    </li>
+
+                    <li><a href="#">Trabalho de Graduação</a>
+
+                    <li><a href="#">Estágio</a>
+
+                    <li><a href="#">Siga ▾</a>
+
+                        <ul>
+                            <li style="margin-top: 10px;"><a href="#">Alunos</a></li>
+                            <li><a href="#">Professores</a></li>
+                        </ul>
+
+                    </li>
+
+                    <li><a href="#">Cesta Básica ▾</a>
+
+                        <ul>
+                            <li style="margin-top: 10px;"><a href="#">Araçatuba - Carne - 2017</a></li>
+                            <li><a href="#">Araçatuba - Frutas e verduras - 2017</a></li>
+                            <li><a href="#">Araçatuba - Mercearia - 2017</a></li>
+                            <li style="margin-bottom: 10px;"><a href="#">Araçatuba - Cesta básica - 2017</a></li>
+                        </ul>
+
+                    </li>
+
+                    <li><a href="#">CPA ▾</a>
+
+                        <ul>
+                            <li style="margin-top: 10px;"><a href="#">Relátorio 2021</a></li>
+                            <li><a href="#">Relátorio 2022</a></li>
+                            <li><a href="#">Relátorio 2023</a></li>
+                        </ul>
+
+                    </li>
+
+                    <li><a href="#">Eventos ▾</a>
+
+                        <ul>
+                            <li style="margin-top: 10px;"><a href="#">Sematec</a></li>
+                            <li><a href="#">Hackaton</a></li>
+                            <li><a href="#">Fatec Aberta</a></li>
+                        </ul>
+
+                    </li>
+
+                </ul>
+            </nav>
+
+        </div>
+
+    </div>
+
+    <div class="divisoria" style="display: flex; background-color: orange; "></div>
+
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+            <div class="text1">Facebook</div>
+            <img src="img/facebook.jpg" style="width:1000px">
+            <div class="text"><a href="#">Curtir!</a></div>
+        </div>
+  
+        <div class="mySlides fade">
+            <div class="text1">Quem Somos</div>
+            <img src="img/quemsomos.jpg" style="width:1000px">
+            <div class="text"><a href="#">Quero saber!</a></div>
+        </div>
+  
+        <div class="mySlides fade">
+            <div class="text1">Fatec Aberta</div>
+            <img src="img/banner-blue.png" style="width:1000px">
+            <div class="text"><a href="#">Veja!</a></div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="text1">Vestibular Fatec</div>
+            <div class="text2"></div>
+            <img src="img/vestibular.jpg" style="width:1000px">
+            <div class="text"><a href="#">Saiba Mais!</a></div>
+        </div>
+  
+    </div>
+    <br>
+  
+  <div style="text-align:center">
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+    <span class="dot"></span>
+    <span class="dot"></span> 
+  </div>
+
+  <script>
+    let slideIndex = 0;
+    showSlides();
+    
+    function showSlides() {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}    
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+      setTimeout(showSlides, 4000); // Change image every 2 seconds
+    }
+    </script>
+  
+    <div>
+
+        <h1>
+
+            Graduações
+
+        </h1>
+
+    </div>
+
+    <div class="info">
+
+        <div class="graduacao1">
+
+            <h3>
+
+                Análise e Desen. de Sistemas
+    
+            </h3>
+    
+            <img src="img/ads.svg" alt="Sistemas">
+    
+            <p>
+    
+                O técnólogo de Análise e Desenvolvimento de Sistemas analisa, projeta, implementa e atualiza sistemas de informação para diversas áreas de atividade, além de ter noções de gerenciamento. Programa computadores e desenvolve softwares que aproveitam melhor as máquinas, ampliem a capacidade de armazenamento de dados e maior velocidade no processamento das informações.
+    
+            </p>
+
+            <h6 style="margin-top: 58px;">
+
+                <a href="#">Saiba Mais</a>
+
+            </h6>
+
+        </div>
+
+        <div class="graduacao2">
+
+            <h3>
+
+                Gestão Empresarial
+    
+            </h3>
+    
+            <img src="img/ead.svg" alt="Sistemas2">
+    
+            <p>
+    
+                O Tecnólogo em Gestão Empresarial (Processos Gerenciais) elabora e implementa planos de negócios, utilizando métodos e técnicas de gestão na formação e organização empresarial especificamente nos processos de comercialização, suprimento, armazenamento, movimentação de materiais e no gerenciamento de recursos financeiros e humanos.
+    
+            </p>
+
+            <h6 style="margin-top: 63px;">
+
+                <a href="#">Saiba Mais</a>
+
+            </h6>
+
+        </div>
+
+        <div class="graduacao3">
+
+            <h3>
+
+                Biocombustíveis
+    
+            </h3>
+    
+            <img src="img/bio.svg" alt="Sistemas3">
+    
+            <p>
+    
+                O tecnólogo da área de biocombustíveis conhece e aplica os processos de obtenção de biocombustíveis produzidos de materiais como cana-de-açúcar, carvão vegetal e plantas oleaginosas (girassol, dendê, soja, amendoim, mamona). Desenvolve produtos bioenergéticos (álcool combustível e biodiesel) e controla a produção e a qualidade das fontes alternativas de energia.
+    
+            </p>
+
+            <h6 style="margin-top: 55px;">
+
+                <a href="#">Saiba Mais</a>
+
+            </h6>
+
+        </div>
+
+    </div>
+
+    <div style="background-color: orange; width: 100%;
+    height: 5px; margin-top: 212px;"></div>
+
+</body>
+</html>
